@@ -1,0 +1,43 @@
+//
+//  shine_weibo-PrefixHeader.pch
+//  shine_weibo
+//
+//  Created by shine on 16/4/12.
+//  Copyright © 2016年 shine. All rights reserved.
+//
+//
+#ifndef shine_weibo_PrefixHeader_pch
+#define shine_weibo_PrefixHeader_pch
+
+
+#import "UIImage+XZimage.h"
+#import "UIView+XZFram.h"
+#import "UIBarButtonItem+XZItem.h"
+#import "NSDate+MJ.h"
+
+#define XZKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define XZStatusCellMargin 10
+#define XZNameFont [UIFont systemFontOfSize:13]
+#define XZTimeFont [UIFont systemFontOfSize:12]
+#define XZSourceFont XZTimeFont
+#define XZTextFont [UIFont systemFontOfSize:15]
+#define XZScreenW [UIScreen mainScreen].bounds.size.width
+
+
+#ifdef DEBUG
+
+#define XZLog(...) NSLog(__VA_ARGS__)
+
+#else 
+
+#define XZLog(...)
+
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* shine_weibo_PrefixHeader_pch */
+
+
